@@ -1,0 +1,64 @@
+/* Header Css */
+
+.header-page {
+  background: rgba(0,128,255,0.5);
+  position: relative;
+}
+
+.head-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  z-index: -1;
+}
+
+
+}
+nav {
+  list-style-type: none;
+  background: rgba(0,128,255,0.5);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+nav:hover {
+  background: none;
+}
+
+#logo {
+  text-align: center;
+}
+.absearch {
+  display: inline;
+}
+#search {
+  /* float: right; */
+  padding: 2%;
+}
+
+#about {
+  /* float: right; */
+  padding: 2%;
+}
+
+.glyphicon-search {
+  transform: scaleX(-1);
+}
+
+.header1 {
+  margin: 2ex 0;
+  text-align: center;
+  clear: both;
+}
+
+h1 {
+  color: #fff;
+}
+
+h1 small {
+  font-size: 30%;
+}
