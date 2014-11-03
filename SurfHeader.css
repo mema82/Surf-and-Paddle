@@ -1,8 +1,9 @@
 /* Header Css */
 
-.header-page {
+.page-header {
   background: rgba(0,128,255,0.5);
   position: relative;
+  margin: 0;
 }
 
 .head-img {
@@ -10,39 +11,46 @@
   top: 0;
   right: 0;
   left: 0;
-  max-width: 100%;
+  width: 100%;
   z-index: -1;
+  height: 100%;
 }
 
-
-}
 nav {
+  text-align: center;
   list-style-type: none;
-  background: rgba(0,128,255,0.5);
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
+  padding: 2ex 0;
 }
 
-nav:hover {
-  background: none;
+nav div {
+  color: #123456;
+  font-weight: bold;
+}
+
+nav::after {
+  display: block;
+  content: url(https://a4a9af4a2e802671f00b4af7d94a218d2d71be32.googledrive.com/host/0B_9V0tR7amAncWVCbGNEZUhXYmM/icon-logo.png);
+  margin-top: 2ex;
 }
 
 #logo {
-  text-align: center;
+  display: none;
 }
-.absearch {
-  display: inline;
-}
+
 #search {
   /* float: right; */
   padding: 2%;
+  display: inline;
 }
 
 #about {
   /* float: right; */
   padding: 2%;
+  display: inline;
 }
 
 .glyphicon-search {
@@ -57,8 +65,11 @@ nav:hover {
 
 h1 {
   color: #fff;
+  margin-top: 0.5ex;
+  margin-bottom: 1ex;
 }
 
 h1 small {
   font-size: 30%;
+  color: #123456;
 }
