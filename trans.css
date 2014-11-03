@@ -87,3 +87,7 @@ Section
         width: 25%; margin: 0;
   }
 }
+
+footer {
+      clear:both;
+}
