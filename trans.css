@@ -25,6 +25,11 @@ Section
       z-index: -1;
 }
 
+.mostpop {
+      border-top: 1pt solid gray;
+      padding: 0;
+}
+
 .mostpop article {
       margin: 2ex 0;
 }
