@@ -1,0 +1,103 @@
+/* Main css for Surf & Paddle */
+
+.page-header {
+	background: rgba(0,128,255,0.5);
+	position: relative;
+	margin: 0;
+}
+
+.head-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	height: 100%;
+}
+
+nav {
+	text-align: center;
+	list-style-type: none;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	padding: 2ex 0;
+}
+
+nav div {
+	color: #123456;
+	font-weight: bold;
+}
+
+nav::after {
+	display: block;
+	content: url(https://a4a9af4a2e802671f00b4af7d94a218d2d71be32.googledrive.com/host/0B_9V0tR7amAncWVCbGNEZUhXYmM/icon-logo.png);
+	margin-top: 2ex;
+}
+
+#logo {
+	display: none;
+}
+
+#search {
+	/* float: right; */
+	padding: 2%;
+	display: inline;
+}
+
+#about {
+	/* float: right; */
+	padding: 2%;
+	display: inline;
+}
+
+.glyphicon-search {
+	transform: scaleX(-1);
+}
+
+.header1 {
+	margin: 2ex 0;
+	text-align: center;
+	clear: both;
+}
+
+header h1 {
+	color: #fff;
+	margin-top: 0.5ex;
+	margin-bottom: 1ex;
+}
+
+header a {
+	text-decoration: none;
+}
+
+h1 small {
+	font-size: 30%;
+	color: #123456;
+}
+h1, h2 {
+
+	font-color: #123456;
+}
+
+a:visited {
+	color:grey;
+}
+
+
+a {
+	text-decoration: underline;
+}
+
+.glyphs {
+
+	 float:left
+	 clear:both;
+}
+
+footer {
+
+	background-color: #123456;
+}
