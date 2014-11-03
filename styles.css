@@ -1,13 +1,12 @@
-<style>
-
 h1, h2 {
 
-	color: #123456;
+	font-color: #123456;
 }
 
-a: link. a:visited{
-	color: #AAB; 
+a:visited {
+	color:grey;
 }
+
 
 a {
 	text-decoration: underline;
@@ -19,5 +18,8 @@ a {
 	 clear:both;
 }
 
+footer {
 
-</style>
+	background-color: #123456;
+}
+
