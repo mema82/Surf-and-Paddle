@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Main css for Surf & Paddle */
 
 .page-header {
@@ -78,8 +77,7 @@ h1 small {
 	font-size: 30%;
 	color: #123456;
 }
-=======
->>>>>>> 6927415c8abd3f3fffacc8aa82418b161d1ee4ba
+
 h1, h2 {
 
 	font-color: #123456;
@@ -104,7 +102,41 @@ footer {
 
 	background-color: #123456;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 6927415c8abd3f3fffacc8aa82418b161d1ee4ba
+.bigAl {
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.some {
+	text-align: center;
+}
+.social {
+	text-align: center;
+}
+.someMini {
+	display: none;
+}
+@media (min-width: 768px) {
+.someMini {
+	  display: block;
+		float: left;
+	}
+
+.miniAl {
+	border-radius: 50%;
+}
+
+.date {
+	line-height: 28px;
+}
+}
+
+@media (min-width: 992px) {
+	.sidebar {
+		margin-top: 2ex;
+	}
+}
