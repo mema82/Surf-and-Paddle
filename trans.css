@@ -12,6 +12,7 @@ Section
   -> Hover: full visibility *main feature to figure out.
 */
 
+
 .bg-container {
       position: relative;
       background: rgba(0,128,255,0.5);
@@ -23,6 +24,20 @@ Section
       position: absolute;
       top: 0; left: 0; right: 0;
       z-index: -1;
+}
+
+.img {
+      max-width: 100%;
+}
+
+.container {
+      max-width: 1800px;
+      margin: auto;
+}
+
+    .container > * {
+      padding: 0 1.2em;
+      clear: both;
 }
 
 .mostpop {
@@ -58,4 +73,11 @@ Section
       margin: 0 auto; margin-left: 0;
       padding: 2ex 1em;
       max-width: 60%;
+}
+
+@media (min-width: 600px){
+  .popular article {
+        width: 48%; margin: 1%;
+        float: left;
+  }
 }
