@@ -76,8 +76,14 @@ Section
 }
 
 @media (min-width: 600px){
-  .popular article {
+  .mostpop article {
         width: 48%; margin: 1%;
         float: left;
+  }
+}
+
+@media (min-width: 1200px){
+  .mostpop article {
+        width: 25%; margin: 0;
   }
 }
