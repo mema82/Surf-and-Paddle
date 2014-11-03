@@ -1,1 +1,21 @@
-/* Opacity/Hover */
+/*
+Header Opacity
+
+Opacity/Hover Lower Articles
+
+(Lower Articles)
+Section
+ Header
+  -> 4 posts
+  -> h4/5 on top of img
+  -> img is background
+  -> Hover: full visibility *main feature to figure out.
+*/
+
+.faded {
+  opacity: 0.65;
+}
+
+.faded:hover {
+  opacity: 1;
+}
