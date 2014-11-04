@@ -87,7 +87,6 @@ a:visited {
 	color:grey;
 }
 
-
 a {
 	text-decoration: underline;
 }
@@ -120,6 +119,80 @@ footer {
 .someMini {
 	display: none;
 }
+.bg-container {
+      position: relative;
+      background: rgba(0,128,255,0.5);
+      overflow: hidden;
+}
+
+.bg-img {
+      display: block;
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: -1;
+}
+
+.img {
+      max-width: 100%;
+}
+
+.container {
+      max-width: 1800px;
+      margin: auto;
+}
+
+    .container > * {
+      padding: 0 1.2em;
+      clear: both;
+}
+
+.mostpop {
+      border-top: 1pt solid gray;
+      padding: 0;
+}
+
+.mostpop article {
+      margin: 2ex 0;
+}
+
+.mostpop header {
+      text-align: center;
+}
+
+.mostpop article {
+      position: relative;
+      height: 300px;
+      display: block;
+      text-decoration: none;
+      transition: background-color 0.25s;
+}
+
+.mostpop article:hover {
+      background-color: rgba(0,100,255,0);
+      transition: background-color 0.5s ease-in-out;
+}
+
+.mostpop .p-title {
+      position: absolute;
+      color: white;
+      bottom: 0; left: 0; right: 0;
+      margin: 0 auto; margin-left: 0;
+      padding: 2ex 1em;
+      max-width: 60%;
+}
+
+footer {
+			clear:both;
+}
+
+
+@media (min-width: 600px){
+	.mostpop article {
+				width: 48%; margin: 1%;
+				float: left;
+	}
+}
+
 @media (min-width: 768px) {
 .someMini {
 	  display: block;
@@ -152,5 +225,14 @@ nav::after {
 @media (min-width: 992px) {
 	.sidebar {
 		margin-top: 2ex;
+	}
+	.page-header {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1200px){
+	.mostpop article {
+				width: 25%; margin: 0;
 	}
 }
