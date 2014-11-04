@@ -4,6 +4,7 @@
 	background: rgba(0,128,255,0.5);
 	position: relative;
 	margin: 0;
+	overflow: hidden;
 }
 
 .head-img {
@@ -11,9 +12,8 @@
 	top: 0;
 	right: 0;
 	left: 0;
-	width: 100%;
 	z-index: -1;
-	height: 100%;
+	width: 100%;
 }
 
 nav {
@@ -77,6 +77,7 @@ h1 small {
 	font-size: 30%;
 	color: #123456;
 }
+
 h1, h2 {
 
 	font-color: #123456;
@@ -100,4 +101,56 @@ a {
 footer {
 
 	background-color: #123456;
+}
+
+.bigAl {
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.some {
+	text-align: center;
+}
+.social {
+	text-align: center;
+}
+.someMini {
+	display: none;
+}
+@media (min-width: 768px) {
+.someMini {
+	  display: block;
+		float: left;
+	}
+
+.miniAl {
+	border-radius: 50%;
+}
+
+.date {
+	line-height: 28px;
+}
+#logo {
+	display: block;
+	float: left;
+}
+.absearch {
+	float: right;
+}
+nav {
+	width: 80%;
+	margin: 0 auto;
+}
+nav::after {
+	display: none;
+}
+}
+
+@media (min-width: 992px) {
+	.sidebar {
+		margin-top: 2ex;
+	}
 }
