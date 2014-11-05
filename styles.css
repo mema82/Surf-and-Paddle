@@ -1,22 +1,12 @@
 /* Main css for Surf & Paddle */
 
-@import url("//fonts.googleapis.com/css?family=Oswald:300,400,700");
-    @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600");
- 
-    /**
-     * Colors:
-     * - lightblue: rgb(162,175,186)
-     * - darkblue: rgb(18,52,80)
-     * - blue: rgb(41,113,176)
-     * - darkgray: rgb(19,53,81)
-     * - gray: rgb(163,179,91)
-     */
-
-body {
-
-	background-color: #ffffff;
+.main {
+	width: 100%;
+	margin-top: 2%;
 }
-
+.container, .container-fluid {
+	padding: 0;
+}
 .page-header {
 	background: rgba(0,128,255,0.5);
 	position: relative;
@@ -46,7 +36,6 @@ nav {
 nav div {
 	color: #123456;
 	font-weight: bold;
-
 }
 
 nav::after {
@@ -74,50 +63,57 @@ nav::after {
 .glyphicon-search {
 	transform: scaleX(-1);
 }
+.glyphicon-comment, .glyphicon-cloud,
+.glyphicon-share {
+	background-color: #123456;
+	color: white;
+	padding: .69%;
+	vertical-align: top;
+}
+button {
+	color: white;
+	background-color: lightsteelblue;
+	border: none;
+}
+.share {
+	background-color: steelblue;
+}
 
 .header1 {
-
-	margin: 2ex 0;
+	margin: 0;
 	text-align: center;
 	clear: both;
+}
+.header1 p {
+	margin: 0;
 }
 
 header h1 {
 	color: #fff;
 	margin-top: 0.5ex;
-	margin-bottom: 1ex;
-	font: 300 3.5ex/1 "Open Sans", Helvetica, Arial, sans-serif
+	margin-bottom: 0;
+	font-family: "open sans", "sans-serif";
 }
-
 
 header a {
 	text-decoration: none;
 }
-
+.col-md-8 h1{
+	font-size: 350%;
+	font-family: "Oswald", "sans-serif";
+}
 h1 small {
 	font-size: 30%;
 	color: #123456;
 }
 
-h1, h2 {
-
+h1, h2, h4 {
 	color: #123456;
-	
-
-}
-
-h1 {
-
-font: 400 3.5ex/1 "Open Sans", Helvetica, Arial, sans-serif;
-font-size: 6ex;
-
-
 }
 
 a:visited {
 	color:grey;
 }
-
 
 a {
 	text-decoration: underline;
@@ -130,17 +126,19 @@ a {
 }
 
 footer {
+
 	background-color: #123456;
 }
 
-<<<<<<< HEAD
 .bigAl {
-	width: 30%;
-	height: 30%;
+	width: 40%;
 	border-radius: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+.miniDave {
+	margin: 20%;
 }
 .some {
 	text-align: center;
@@ -151,11 +149,115 @@ footer {
 .someMini {
 	display: none;
 }
+.bg-container {
+      position: relative;
+      background: rgba(0,128,255,0.5);
+      overflow: hidden;
+}
+
+.bg-img {
+      display: block;
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: -1;
+}
+
+.img {
+      max-width: 100%;
+}
+
+.mostpop {
+      padding: 0;
+}
+
+.mostpop article {
+      margin: 2ex 0;
+}
+
+.mostpop header {
+      text-align: center;
+			margin-top: 5ex;
+}
+
+.mostpop article {
+      position: relative;
+      height: 300px;
+      display: block;
+      text-decoration: none;
+      transition: background-color 0.25s;
+}
+
+.mostpop article:hover {
+      background-color: rgba(0,100,255,0);
+      transition: background-color 0.5s ease-in-out;
+}
+
+.mostpop .p-title {
+      position: absolute;
+      color: white;
+      bottom: 0; left: 0; right: 0;
+      margin: 0 auto; margin-left: 0;
+      padding: 2ex 1em;
+      max-width: 60%;
+}
+
+footer {
+			clear:both;
+			padding-top: 4ex;
+}
+
+.sideAd section img{
+	width: 100%;
+}
+.sidebar-heading {
+	display:none;
+}
+.row {
+	width: 100%;
+  margin: 0;
+}
+.mostpop h4 {
+	font-size: 250%;
+	font-family: "Oswald", "Arial", "sans-serif";
+	color: #123456;
+	text-transform: uppercase;
+}
+@media (min-width: 600px){
+	.mostpop article {
+				width: 48%; margin: 1%;
+				float: left;
+	}
+	header h1 {
+		font-size: 350%;
+	}
+	.col-md-8 h1 {
+		font-size: 250%;
+	}
+	.miniDave {
+		display: none;
+	}
+	.sidebar {
+		margin-top: 3ex;
+	}
+}
+
 @media (min-width: 768px) {
+.header1 {
+	margin: 8% 0 0 0;
+}
+.sidebar-heading {
+	display: block;
+}
+.sidebar {
+	margin-top: 4ex;
+}
+.sideAd {
+	width: 50%;
+	float: right;
+}
 .someMini {
 	  display: block;
-		float: left;
-	}
+}
 
 .miniAl {
 	border-radius: 50%;
@@ -178,50 +280,45 @@ nav {
 nav::after {
 	display: none;
 }
+.col-md-8 h1 {
+	font-size: 450%;
+}
+.mostpop h4 {
+	font-size: 350%;
 }
 
 @media (min-width: 992px) {
 	.sidebar {
 		margin-top: 2ex;
 	}
-}
-=======
-
-.side img{
-
-	border-radius: 50%;
-	height:20%;
-	width: 20%
- 	}
-
-
-.author {
-
-	color: rgb(41,113,176);
-
-
-}
-
-.social {
-
-	color: rgb(162,175,186)
-
-}
-
-blockquote {
-
-	color: #2971B0;
-	font-size: 150%;
-
+	.page-header {
+		min-height: 450px;
+	}
+	.main {
+		width: 85%;
+		margin-top: 5%;
+	}
+	.sideAd {
+		width: 100%;
+		float: none;
+	}
+	.miniDave {
+		display: block;
+	}
+	header h1  {
+		font-size: 600%;
+		font-weight: bolder;
+	}
+	h4 {
+		font-size: 500%;
+		font-weight: bolder;
+		padding: 1ex;
+	}
 }
 
+@media (min-width: 1200px){
+	.mostpop article {
+				width: 25%; margin: 0;
+	}
 
-
-
-
-
-
-
-
-
->>>>>>> 5020b460779348e4f9de372faa85e48d6b434539
+}
