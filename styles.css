@@ -207,12 +207,15 @@ footer {
 .sidebar-heading {
 	display: block;
 }
+.sideAd {
+	width: 50%;
+	float: right;
+}
 .miniDave {
 	display: none;
 }
 .someMini {
 	  display: block;
-		float: left;
 	}
 
 .miniAl {
