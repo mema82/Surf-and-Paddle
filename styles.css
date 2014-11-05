@@ -1,7 +1,11 @@
 /* Main css for Surf & Paddle */
 
 .main {
-	width: 85%;
+	width: 100%;
+	margin-top: 2%;
+}
+.container, .container-fluid {
+	padding: 0;
 }
 .page-header {
 	background: rgba(0,128,255,0.5);
@@ -59,31 +63,52 @@ nav::after {
 .glyphicon-search {
 	transform: scaleX(-1);
 }
+.glyphicon-comment, .glyphicon-cloud,
+.glyphicon-share {
+	background-color: #123456;
+	color: white;
+	padding: .69%;
+	vertical-align: top;
+}
+button {
+	color: white;
+	background-color: lightsteelblue;
+	border: none;
+}
+.share {
+	background-color: steelblue;
+}
 
 .header1 {
-	margin: 2ex 0;
+	margin: 0;
 	text-align: center;
 	clear: both;
+}
+.header1 p {
+	margin: 0;
 }
 
 header h1 {
 	color: #fff;
 	margin-top: 0.5ex;
-	margin-bottom: 1ex;
+	margin-bottom: 0;
+	font-family: "open sans", "sans-serif";
 }
 
 header a {
 	text-decoration: none;
 }
-
+.col-md-8 h1{
+	font-size: 350%;
+	font-family: "Oswald", "sans-serif";
+}
 h1 small {
 	font-size: 30%;
 	color: #123456;
 }
 
-h1, h2 {
-
-	font-color: #123456;
+h1, h2, h4 {
+	color: #123456;
 }
 
 a:visited {
@@ -141,18 +166,7 @@ footer {
       max-width: 100%;
 }
 
-.container {
-      max-width: 1800px;
-      margin: auto;
-}
-
-    .container > * {
-      padding: 0 1.2em;
-      clear: both;
-}
-
 .mostpop {
-      border-top: 1pt solid gray;
       padding: 0;
 }
 
@@ -162,6 +176,7 @@ footer {
 
 .mostpop header {
       text-align: center;
+			margin-top: 5ex;
 }
 
 .mostpop article {
@@ -188,6 +203,7 @@ footer {
 
 footer {
 			clear:both;
+			padding-top: 4ex;
 }
 
 .sideAd section img{
@@ -196,27 +212,52 @@ footer {
 .sidebar-heading {
 	display:none;
 }
+.row {
+	width: 100%;
+  margin: 0;
+}
+.mostpop h4 {
+	font-size: 250%;
+	font-family: "Oswald", "Arial", "sans-serif";
+	color: #123456;
+	text-transform: uppercase;
+}
 @media (min-width: 600px){
 	.mostpop article {
 				width: 48%; margin: 1%;
 				float: left;
 	}
+	header h1 {
+		font-size: 350%;
+	}
+	.col-md-8 h1 {
+		font-size: 250%;
+	}
+	.miniDave {
+		display: none;
+	}
+	.sidebar {
+		margin-top: 3ex;
+	}
 }
 
 @media (min-width: 768px) {
+.header1 {
+	margin: 8% 0 0 0;
+}
 .sidebar-heading {
 	display: block;
+}
+.sidebar {
+	margin-top: 4ex;
 }
 .sideAd {
 	width: 50%;
 	float: right;
 }
-.miniDave {
-	display: none;
-}
 .someMini {
 	  display: block;
-	}
+}
 
 .miniAl {
 	border-radius: 50%;
@@ -239,6 +280,11 @@ nav {
 nav::after {
 	display: none;
 }
+.col-md-8 h1 {
+	font-size: 450%;
+}
+.mostpop h4 {
+	font-size: 350%;
 }
 
 @media (min-width: 992px) {
@@ -246,7 +292,27 @@ nav::after {
 		margin-top: 2ex;
 	}
 	.page-header {
-		min-height: 400px;
+		min-height: 450px;
+	}
+	.main {
+		width: 85%;
+		margin-top: 5%;
+	}
+	.sideAd {
+		width: 100%;
+		float: none;
+	}
+	.miniDave {
+		display: block;
+	}
+	header h1  {
+		font-size: 600%;
+		font-weight: bolder;
+	}
+	h4 {
+		font-size: 500%;
+		font-weight: bolder;
+		padding: 1ex;
 	}
 }
 
@@ -254,4 +320,5 @@ nav::after {
 	.mostpop article {
 				width: 25%; margin: 0;
 	}
+
 }
