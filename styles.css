@@ -1,5 +1,8 @@
 /* Main css for Surf & Paddle */
 
+.main {
+	width: 85%;
+}
 .page-header {
 	background: rgba(0,128,255,0.5);
 	position: relative;
@@ -103,12 +106,14 @@ footer {
 }
 
 .bigAl {
-	width: 30%;
-	height: 30%;
+	width: 40%;
 	border-radius: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+.miniDave {
+	margin: 20%;
 }
 .some {
 	text-align: center;
@@ -185,7 +190,12 @@ footer {
 			clear:both;
 }
 
-
+.sideAd section img{
+	width: 100%;
+}
+.sidebar-heading {
+	display:none;
+}
 @media (min-width: 600px){
 	.mostpop article {
 				width: 48%; margin: 1%;
@@ -194,6 +204,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+.sidebar-heading {
+	display: block;
+}
+.miniDave {
+	display: none;
+}
 .someMini {
 	  display: block;
 		float: left;
