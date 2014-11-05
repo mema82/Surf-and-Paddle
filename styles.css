@@ -99,7 +99,7 @@ header a {
 	text-decoration: none;
 }
 .col-md-8 h1{
-	font-size: 350%;
+	font-size: 355%;
 	font-family: "Oswald", "sans-serif";
 }
 h1 small {
@@ -205,6 +205,10 @@ footer {
 			clear:both;
 			padding-top: 4ex;
 }
+blockquote {
+	color: #2971B0;
+	font-size: 150%;
+}
 
 .sideAd section img{
 	width: 100%;
@@ -247,6 +251,11 @@ footer {
 }
 .sidebar-heading {
 	display: block;
+}
+.sidebar-heading h3 {
+	color: #123456;
+	font-size: 300%;
+	vertical-align: top;
 }
 .sidebar {
 	margin-top: 4ex;
@@ -313,6 +322,9 @@ nav::after {
 		font-size: 500%;
 		font-weight: bolder;
 		padding: 1ex;
+	}
+	.sidebar-heading h3 {
+		font-size: 150%;
 	}
 }
 
