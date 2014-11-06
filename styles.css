@@ -212,6 +212,7 @@ blockquote {
 
 .sideAd section img{
 	width: 100%;
+	padding: 0 6%;
 }
 .sidebar-heading {
 	display:none;
